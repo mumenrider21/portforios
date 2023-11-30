@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+   	
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/oauth-1.0a@2.2.6/oauth-1.0a.min.js"></script>
+
+<body>
+    <h3>カメラ画像取得</h3>
+    <!-- <div class="text-center mb-3">
+      <a href="#googtrans(ja|en)" class="lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a> 
+      <a href="#googtrans(ja|zh-CN)" class="lang-select" data-lang="zh-CN"><img src="https://www.solodev.com/assets/google-translate/flag-china.png" alt="China"></a> 
+      <a href="#googtrans(ja|es)" class="lang-select" data-lang="es"><img src="https://www.solodev.com/assets/google-translate/flag-mexico.png" alt="MEXICO"></a>
+      <a href="#googtrans(ja|fr)" class="lang-select" data-lang="fr"><img src="https://www.solodev.com/assets/google-translate/flag-france.png" alt="France"></a>
+      <a href="#googtrans(ja|ja)" class="lang-select" data-lang="ja"><img src="https://www.solodev.com/assets/google-translate/flag-japan.png" alt="JAPAN"></a>
+    </div> -->
+  
+    <textarea oninput="handle(event)">I am a cat.</textarea>
+    <div>翻訳結果: <output id=output1>私は猫です。</output></div>
+
+    <div class="flex-row">
+        <div class="camera">
+            <video id="video"></video>
+            <div id="shoot">撮影</div>
+        </div>
+        <div class="field">
+          <div class="card">
+        <img id="photo"></div>
+    </div>
+    <div class="card">
+     <p>これは</p> 
+     <div id="stock"></div>
+    <output id="output"></output>
+     
+    </div>
+  </div>
+  </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>相場チェッコ！！</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	<div id="my_container">
+		<div id="my_inner">
+			<div>相場チェッコ！！</div>
+      <input type="button" value="Amazonで開く" id="mybtn1">
+      <input type="button" value="楽天で開く" id="mybtn2">
+			<div>
+				<button id="my_start">Start</button>
+				<button id="my_stop">Stop</button>
+			</div>
+			<div id="my_quagga"></div>
+			<div id="my_result">***</div>
+			<div id="my_barcode">
+				<div>***</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="getData"></div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="jquery.csv.js"></script>
+<script type="text/javascript" src="readcsv.js"></script>
+
+<ul id="list">
+    </ul>
+
+	<!-- JavaScript -->
+	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="//unpkg.com/@ericblade/quagga2@1.7.4/dist/quagga.min.js"></script>
+	<script src="//cdn.jsdelivr.net/gh/mtaketani113/jquery-barcode@master/jquery-barcode.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
